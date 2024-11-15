@@ -14,7 +14,12 @@ const CharacterDetail: React.FC = () => {
 
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: "30px",
+      }}
     >
       <h3>{character.name}</h3>
       <img

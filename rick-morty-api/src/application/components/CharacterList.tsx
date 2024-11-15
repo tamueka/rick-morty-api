@@ -8,7 +8,14 @@ const CharacterList: React.FC = () => {
   const { characters } = CharactersContext();
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "30px",
+        marginTop: "30px",
+      }}
+    >
       {characters.map((character: CharacterType) => (
         <Link to={`/character/${character.id}`} key={character.id}>
           <Character key={character.id} character={character} />
