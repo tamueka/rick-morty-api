@@ -8,7 +8,6 @@ export const App: React.FC = () => {
     <CharacterProvider>
       <Router>
         <h1 style={{ textAlign: "center" }}>Personajes Rock and Morty</h1>
-        {/* Enrutado */}
         <RouterComponent />
       </Router>
     </CharacterProvider>

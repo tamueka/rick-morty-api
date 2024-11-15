@@ -1,9 +1,22 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "target": "es5", // O "es6" si estás usando un entorno más moderno
+    "lib": ["dom", "dom.iterable", "esnext"], // Las bibliotecas necesarias para trabajar con React y características modernas
+    "jsx": "react-jsx", // Usar JSX moderno
+    "moduleResolution": "node", // Resolución de módulos como Node.js
+    "strict": true, // Activar todas las verificaciones de tipos estrictas
+    "esModuleInterop": true, // Permitir la interoperabilidad entre módulos ES y CommonJS
+    "forceConsistentCasingInFileNames": true, // Asegurar que los nombres de archivo tengan una capitalización consistente
+    "module": "esnext", // Usar módulos de ESNext para compatibilidad con el bundler moderno
+    "resolveJsonModule": true, // Permite importar archivos .json
+    "isolatedModules": true, // Asegura que cada archivo se pueda compilar independientemente
+    "noEmit": true, // No generar archivos de salida (ya que estamos usando Babel o Webpack)
+    "skipLibCheck": true // Acelera la compilación al omitir la comprobación de tipos en las bibliotecas
+  },
+  "include": [
+    "src/**/*" // Incluir todos los archivos de la carpeta src
+  ],
+  "exclude": [
+    "node_modules" // Excluir node_modules
+  ]
 }
