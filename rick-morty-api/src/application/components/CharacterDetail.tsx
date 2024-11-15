@@ -5,10 +5,8 @@ import { useParams } from "react-router-dom";
 const CharacterDetail: React.FC = () => {
   const { characters } = CharactersContext();
   const { id } = useParams();
-
-const characterId = Number(id);
-const character = characters.find(({ id }) => id === characterId);
-
+  const characterId = Number(id);
+  const character = characters.find(({ id }) => id === characterId);
 
   if (!character) {
     return <p>Personaje no encontrado</p>;
